@@ -2,3 +2,60 @@
 /* @FOOTER */
 /* ********* */
 
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: map-get($colores, principal);
+    color: map-get($colores, texto-principal);
+
+    .top{
+        h2{
+            padding-top: 53px;
+            font-size: 20.24px;
+            text-align: center;
+        }
+        
+        .menuFooter, .infoFooter{
+            font-size: 14px;
+        }
+        
+        .menuFooter{
+            height: 16px;
+            display: flex;
+            justify-content: center;
+
+            .botones{
+            padding: 20px;
+            }
+        }
+             
+        .infoFooter{
+            height: 46px;
+            padding-top: 45px;
+            color: map-get($colores, texto-secundario);
+            text-align: center;
+        }
+    }
+
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 60px;
+
+        .iconos{
+            width: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        
+        .barraIzq{
+            @include cajas;
+            border-top-right-radius: 40px;
+        }
+        
+        .barraDer{
+            @include cajas;
+            border-top-left-radius: 40px;
+        }
+    }
+}
